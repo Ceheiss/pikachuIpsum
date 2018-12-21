@@ -1,0 +1,174 @@
+/******** General ********/
+body {
+  background: linear-gradient(45deg, yellow,orange);
+  font-family: arial;
+}
+
+/******** Header area ********/
+#header {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  height: 240px;
+/*   border: 2px solid blue; */
+  margin-right: 20px;
+  item-align: center;
+}
+
+img:hover{
+  cursor: pointer;
+}
+
+h1 {
+/*   border: 2px solid black; */
+  text-align: center;
+  font-family: 'Monofett', cursive;
+  font-size: 100px;
+  color: #cc0000;
+}
+
+/******** Input Area ********/
+#input {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#btn {
+  margin-left: 10px;
+  font-size: 18px;
+  border-color: grey;
+  border-radius: 5px;
+  color: rgb(255,209,46);
+  background: #cc0000;
+  transition: 0.2s ease-in;
+}
+
+#btn:hover{
+  transform: scale(1.1);
+  background: red;
+  color: yellow;
+  cursor: pointer;
+}
+
+#btn:focus {outline:0;}
+
+/******** Container and Footer ********/
+#container{
+  background: #fff;
+  border: 2px solid black;
+  border-radius: 7px;
+  width: 60%;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+#container h2 {
+  text-align: center;
+  opacity: 0;
+}
+
+footer {
+  margin: 170px auto 40px auto;
+  text-align: center;
+}
+
+.fab {
+  margin-left: 10px;
+  transition: 0.2s linear;
+}
+
+.fab:hover {
+  color: #c00;
+  transform: scale(1.5);
+}
+
+footer a {
+  text-decoration: none;
+  color: #000;
+}
+
+/******** Media Queries ********/
+
+@media screen and (max-width: 630px) {
+  img {
+    height: 200px;
+    width: auto;
+    margin: auto;
+    margin-bottom: -15px;
+  }
+  #header {
+    flex-direction: column; 
+    flex-wrap: nowrap;
+  }
+  h1 {
+    font-size:70px;
+  }
+}
+
+/******** Animations ********/
+#header h1 {
+  animation-name: title-entrance;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+}
+
+@keyframes title-entrance {
+  0% {
+    transform: translateX(150%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0%);
+  }  
+}
+
+#pikaImage{
+  animation-name: pika-entrance;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+}
+
+@keyframes pika-entrance {
+  0% {
+    transform: translateX(-30%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0%);
+  }  
+}
+
+
+
+#container h2{
+  animation-name: pika-appear;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-delay: 2.5s;
+}
+
+@keyframes pika-appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }  
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Monofett" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <!-- Header area (Image and title) -->
+  <header id="header">
+    <img id="pikaImage" src="https://vignette.wikia.nocookie.net/steven-universe/images/7/77/Pikachu.png/revision/latest?cb=20170721211542">
+    <h1>Pikachu Ipsum</h1>
+  </header>
+  <!-- Input area (subtitle, number input and button) -->
+  <section id="input">
+    <h3 class="input-area">Enter amount of paragraphs:</h3>
+    <input type="number" id="iteration" name="iteration"
+               min="1" value="2" required>
+    <input type="submit" id="btn" value="Pika!" onmouseover="chuMessage(this)" onmouseout="pikaMessage(this)"></input>
+  </section>
+
+  <!-- Container and Footer area -->
+<section id="container"><h2>Ready for some Pika pi?</h2></section>
+  <footer>Developed by Cristobal Heiss  <a href="https://www.freecodecamp.org/ceheiss" target="_blank"><i class="fab fa-free-code-camp"></i></a>  <a href="https://github.com/Ceheiss" target="_blank"><i class="fab fa-github"></i></a>  <a href="https://twitter.com/cristobalheiss" target="_blank"><i class="fab fa-twitter"></i></a>  <a href="https://www.codepen.io/ceheiss" target="_blank"><i class="fab fa-codepen"></i></a></footer>
+
+  <!-- Audio files -->
+  <audio id="pikaAudio" src="https://s3.us-east-2.amazonaws.com/blog-photos-heiss/audios/Pikachu+Sound+Effect.mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <audio id="pikaAudioImg" src="https://s3.us-east-2.amazonaws.com/blog-photos-heiss/audios/pikachu.mp3">
+    Your browser does not support the audio element.
+  </audio>
+  <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
